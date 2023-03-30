@@ -1,0 +1,92 @@
+body::before{
+    display: block;
+    content: '';
+    height: 60px;
+}
+
+#backgrounde {
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('bg-image3.jpg');
+    background-size: cover;
+    background-position: center;
+    animation: slideBg 8s linear infinite 0s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes slideBg {
+    0%{
+        background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('bg-image3.jpg');
+    }
+    50%{
+        background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('bg-image2.jpg');
+    }
+    100%{
+        background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('bg-image.jpg');
+    }
+}
+
+ #backgrounde h1 {
+    font-family: 'DM Serif Display', serif;
+    color: #fff;
+    font-size: 48px;
+    text-shadow: 4px 4px 10px #000;
+}  
+
+#backgrounde p {
+    font-weight: 400;
+    font-size: 18px;
+    color:#fff; 
+    padding: 15px 0;
+    line-height: 140%;
+}
+
+#botao {
+    font-weight: 500;
+    font-size: 18px;
+    color:#fff; 
+    padding: 15px;
+    line-height: 140%;
+}
+
+@media(min-width: 768px) {
+    #news-input {
+        width: 50%;
+    }
+}
+
+#alinharcard {
+    text-align: left;
+}
+
+.iconsmini {
+    font-size: 13px;
+}
+
+ .distanciar{
+    margin-top:50px;
+} 
+
+#preco {
+    font-size: 13px;
+    line-height: 150%;
+}
+
+#background2 {
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url('rio.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#background2 h1 {
+    font-family: 'DM Serif Display', serif;
+    color: #fff;
+    font-size: 38px;
+    text-shadow: 4px 4px 10px #000;
+}  
+
+#background2 p {
+    font-weight: 400;
+    font-size: 16px;
+    color:#fff; 
+    padding: 15px 0;
+    line-height: 140%;
+}
