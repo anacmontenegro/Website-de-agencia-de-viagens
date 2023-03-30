@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <title>Agência de Viagens</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  </head>
+  <body>
+
+    <!-- Topo -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+        <div class="container">
+        <a href="#" class="navbar-brand" style="font-family: 'DM Serif Display', serif;">Agência de Viagens</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navmenu">
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+                <a href="#" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="#sobre" class="nav-link">Sobre</a>
+            </li>
+            <li class="nav-item">
+                <a href="#excursoes" class="nav-link">Pacotes</a>
+            </li>
+            <li class="nav-item">
+                <a href="#contato" class="nav-link">Contato</a>
+            </li>
+        </ul>
+        </div>
+        </div>
+    </nav>
+
+    <!-- Banner -->
+    <section class="bg-dark text-light p-5 text-center text-sm-start" id="backgrounde">
+        <div class="container" style="margin-top: 60px; margin-bottom:50px;">
+                <h1>Viaje em 2023</h1>
+                <p>Faça a <b><span class="text-primary">viagem dos seus sonhos</span></b> pagando barato
+                <br>Vamos arrumar as malas e descobrir o mundo?</p>
+                <button id="botao" type="button" class="btn btn-success">Quero Viajar!</button>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="bg-dark text-light p-5">
+        <div class="container">
+            <div class="d-md-flex justify-content-between align-items-center">
+                <h2 class="mb-3 mb-md-0">Receba ofertas exclusivas</h3>
+                <div class="input-group" id="news-input">
+                    <input type="text" class="form-control" placeholder="Digite seu e-mail" aria-label="Recipient's email" aria-describedby="button-addon2">
+                    <button class="btn btn-primary btn-lg" type="button">Enviar</button>
+                  </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pacotes -->
+    <section class="bg-light text-dark p-5">
+        <div class="container" style="margin-top: 30px;">
+            <div class="row text-center g-3">
+                <div class="col-md">
+                    <div class="card" style="width: 18rem; padding: 10px; box-shadow: 8px 8px 6px #888888; margin-bottom: 30px;">
+                        <img src="fortaleza.jpg" class="card-img-top" alt="...">
+                        <div class="card-body" id="alinharcard">
+                          <h5 class="card-title">Férias no Ceará</h5>
+                          <p>Dezembro/2023</p>
+                          <p class="id iconsmini"><i class="bi bi-calendar4"></i> 5 diárias<br>
+                            <i class="bi bi-check2-circle"></i> Aéreo incluso<br>
+                            <i class="bi bi-check2-circle"></i> Refeições inclusas</p>
+                            <p class="card-text" id="preco">Apenas 10x de<br><span style="color:#198754; font-size:24px; font-weight: bold;">R$190</span></p>
+                          <a href="#" class="btn btn-primary">Saiba mais</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-md">
+                    <div class="card bg-light" style="width: 18rem; padding: 10px; box-shadow: 8px 8px 6px #888888; margin-bottom: 30px;">
+                        <img src="orlando.jpg" class="card-img-top" alt="...">
+                        <div class="card-body" id="alinharcard">
+                          <h5 class="card-title">Orlando Mágico</h5>
+                          <p>Setembro/2023</p>
+                          <p class="id iconsmini"><i class="bi bi-calendar4"></i> 10 diárias<br>
+                            <i class="bi bi-check2-circle"></i> Aéreo incluso<br><i class="bi bi-check2-circle"></i> Ingressos inclusos</p>
+                          <p class="card-text" id="preco">Apenas 10x de<br><span style="color:#198754; font-size:24px; font-weight: bold;">R$520</span></p>
+                          <a href="#" class="btn btn-primary">Saiba mais</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-md">
+                    <div class="card" style="width: 18rem; padding: 10px; box-shadow: 8px 8px 6px #888888; margin-bottom: 30px;">
+                        <img src="tailandia.jpg" class="card-img-top" alt="...">
+                        <div class="card-body" id="alinharcard">
+                          <h5 class="card-title">Tailândia Essencial</h5>
+                          <p>Janeiro/2024</p>
+                          <p class="id iconsmini"><i class="bi bi-calendar4"></i> 7 diárias<br>
+                            <i class="bi bi-check2-circle"></i> Aéreo incluso<br>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" class="bi bi-chat-text" viewBox="0 0 16 16">
+                              <path d="M2.678 11.894a1 1 0 0 1 .287.801 10.97 10.97 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8.06 8.06 0 0 0 8 14c3.996 0 7-2.807 7-6 0-3.192-3.004-6-7-6S1 4.808 1 8c0 1.468.617 2.83 1.678 3.894zm-.493 3.905a21.682 21.682 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a9.68 9.68 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105z"/>
+                              <path d="M4 5.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zM4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8zm0 2.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5z"/>
+                            </svg> Guias brasileiros</p>
+                            <p class="card-text" id="preco">Apenas 10x de<br><span style="color:#198754; font-size:24px; font-weight: bold;">R$685</span></p>
+                          <a href="#" class="btn btn-primary">Saiba mais</a>
+                        </div>
+                      </div>
+                      <a href="#" class="btn btn-light">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                          <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+                        </svg> Mais pacotes
+                      </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre -->
+    <section class="bg-dark text-light p-5 text-center text-sm-start" id="background2">
+      <div class="container" style="margin-top: 30px;">
+        <div class="row">
+          <div class="col-md"><h1>Por que viajar com a gente?</h1></div>
+          <div class="col-md"><p style="margin-bottom: 30px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi facilis officia architecto, deleniti voluptate nihil natus totam velit cumque numquam magni odio doloremque, id molestias debitis!</p></div>
+        </div>   
+        <div class="row">
+          <div class="col-md"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-globe-americas" viewBox="0 0 16 16">
+            <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0ZM2.04 4.326c.325 1.329 2.532 2.54 3.717 3.19.48.263.793.434.743.484-.08.08-.162.158-.242.234-.416.396-.787.749-.758 1.266.035.634.618.824 1.214 1.017.577.188 1.168.38 1.286.983.082.417-.075.988-.22 1.52-.215.782-.406 1.48.22 1.48 1.5-.5 3.798-3.186 4-5 .138-1.243-2-2-3.5-2.5-.478-.16-.755.081-.99.284-.172.15-.322.279-.51.216-.445-.148-2.5-2-1.5-2.5.78-.39.952-.171 1.227.182.078.099.163.208.273.318.609.304.662-.132.723-.633.039-.322.081-.671.277-.867.434-.434 1.265-.791 2.028-1.12.712-.306 1.365-.587 1.579-.88A7 7 0 1 1 2.04 4.327Z"/>
+          </svg><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quasi officia, sed nam molestias doloremque expedita!</p></div>
+          <div class="col-md"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-people" viewBox="0 0 16 16">
+            <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8Zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022ZM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816ZM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0Zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z"/>
+          </svg><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum laborum quod, quia sed ab temporibus tenetur nostrum.</p></div>
+          <div class="col-md"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-piggy-bank" viewBox="0 0 16 16">
+            <path d="M5 6.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0zm1.138-1.496A6.613 6.613 0 0 1 7.964 4.5c.666 0 1.303.097 1.893.273a.5.5 0 0 0 .286-.958A7.602 7.602 0 0 0 7.964 3.5c-.734 0-1.441.103-2.102.292a.5.5 0 1 0 .276.962z"/>
+            <path fill-rule="evenodd" d="M7.964 1.527c-2.977 0-5.571 1.704-6.32 4.125h-.55A1 1 0 0 0 .11 6.824l.254 1.46a1.5 1.5 0 0 0 1.478 1.243h.263c.3.513.688.978 1.145 1.382l-.729 2.477a.5.5 0 0 0 .48.641h2a.5.5 0 0 0 .471-.332l.482-1.351c.635.173 1.31.267 2.011.267.707 0 1.388-.095 2.028-.272l.543 1.372a.5.5 0 0 0 .465.316h2a.5.5 0 0 0 .478-.645l-.761-2.506C13.81 9.895 14.5 8.559 14.5 7.069c0-.145-.007-.29-.02-.431.261-.11.508-.266.705-.444.315.306.815.306.815-.417 0 .223-.5.223-.461-.026a.95.95 0 0 0 .09-.255.7.7 0 0 0-.202-.645.58.58 0 0 0-.707-.098.735.735 0 0 0-.375.562c-.024.243.082.48.32.654a2.112 2.112 0 0 1-.259.153c-.534-2.664-3.284-4.595-6.442-4.595zM2.516 6.26c.455-2.066 2.667-3.733 5.448-3.733 3.146 0 5.536 2.114 5.536 4.542 0 1.254-.624 2.41-1.67 3.248a.5.5 0 0 0-.165.535l.66 2.175h-.985l-.59-1.487a.5.5 0 0 0-.629-.288c-.661.23-1.39.359-2.157.359a6.558 6.558 0 0 1-2.157-.359.5.5 0 0 0-.635.304l-.525 1.471h-.979l.633-2.15a.5.5 0 0 0-.17-.534 4.649 4.649 0 0 1-1.284-1.541.5.5 0 0 0-.446-.275h-.56a.5.5 0 0 1-.492-.414l-.254-1.46h.933a.5.5 0 0 0 .488-.393zm12.621-.857a.565.565 0 0 1-.098.21.704.704 0 0 1-.044-.025c-.146-.09-.157-.175-.152-.223a.236.236 0 0 1 .117-.173c.049-.027.08-.021.113.012a.202.202 0 0 1 .064.199z"/>
+          </svg><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia veritatis corrupti sequi ea eum voluptates quasi, obcaecati.</p></div>
+          <div class="col-md"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-shield-check" viewBox="0 0 16 16">
+            <path d="M5.338 1.59a61.44 61.44 0 0 0-2.837.856.481.481 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.725 10.725 0 0 0 2.287 2.233c.346.244.652.42.893.533.12.057.218.095.293.118a.55.55 0 0 0 .101.025.615.615 0 0 0 .1-.025c.076-.023.174-.061.294-.118.24-.113.547-.29.893-.533a10.726 10.726 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.775 11.775 0 0 1-2.517 2.453 7.159 7.159 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7.158 7.158 0 0 1-1.048-.625 11.777 11.777 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 62.456 62.456 0 0 1 5.072.56z"/>
+            <path d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+          </svg><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi facilis officia architecto, deleniti voluptate nihil natus totam velit!</p></div>
+        </div> 
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="p-5" id="perguntas">
+      <div class="container">
+        <h2 class="mb-4" style="margin-top: 30px;">Perguntas Frequentes</h2>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <!-- Item 1 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                Fiz a compra, e agora?
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad dolorem illo eveniet veniam sunt tenetur vitae incidunt. Quos, obcaecati adipisci. Ipsa placeat aperiam consequuntur quibusdam deleniti veniam cumque quis saepe.</div>
+            </div>
+          </div>
+          <!-- Item 2 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                Posso trocar a data?
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quas pariatur sunt repellendus nulla provident, atque deserunt quis in qui quidem voluptatum? Soluta distinctio, repellat accusantium ea numquam illo ipsa voluptates dolor quia assumenda omnis a. Blanditiis reprehenderit cupiditate enim!</div>
+            </div>
+          </div>
+          <!-- Item 3 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                Quais são as regras para viajar com crianças?
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum hic dolorum deleniti. Dolorem corrupti et laborum, quibusdam eum quas numquam ducimus eaque, dolore saepe, deserunt similique nulla pariatur veniam.</div>
+            </div>
+          </div>
+          <!-- Item 4 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                Como faço para cancelar?
+              </button>
+            </h2>
+            <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quas pariatur sunt repellendus nulla provident, atque deserunt quis in qui quidem voluptatum? Soluta distinctio, repellat accusantium ea numquam illo ipsa voluptates dolor quia assumenda omnis a. Blanditiis reprehenderit cupiditate enim!</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section id="depoimentos" class="p-5 bg-dark">
+      <div class="container mb-5">
+        <h2 class="mb-5 text-white text-center" style="margin-top: 30px;">Depoimentos</h2>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="card bd-light">
+              <div class="card-body text-center">
+                <img src="https://randomuser.me/api/portraits/men/12.jpg" class="rounded-circle mb-3">
+                <h3 class="card-title mb-3">Lucas Silva</h3>
+                <p class="card-text"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-quote" viewBox="0 0 16 16">
+                  <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z"/>
+                </svg> Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit voluptatem, neque corrupti mollitia earum unde! Tempore sunt eaque.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card bd-light">
+              <div class="card-body text-center">
+                <img src="https://randomuser.me/api/portraits/women/32.jpg" class="rounded-circle mb-3">
+                <h3 class="card-title mb-3">Marina Freire</h3>
+                <p class="card-text"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-quote" viewBox="0 0 16 16">
+                  <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z"/>
+                </svg> Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias commodi laboriosam beatae quaerat ab reiciendis? Omnis hic sequi facere vero.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card bd-light">
+              <div class="card-body text-center">
+                <img src="https://randomuser.me/api/portraits/women/14.jpg" class="rounded-circle mb-3">
+                <h3 class="card-title mb-3">Carla Madeira</h3>
+                <p class="card-text"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-quote" viewBox="0 0 16 16">
+                  <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z"/>
+                </svg> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum facere neque eos adipisci asperiores soluta distinctio incidunt delectus quam repellat!</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card bd-light">
+              <div class="card-body text-center">
+                <img src="https://randomuser.me/api/portraits/men/19.jpg" class="rounded-circle mb-3">
+                <h3 class="card-title mb-3">Bruno Gomes</h3>
+                <p class="card-text"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-quote" viewBox="0 0 16 16">
+                  <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z"/>
+                </svg> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam deserunt modi et accusantium soluta nostrum inventore eveniet, cumque!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <section class="p-5">
+      <div class="container mb-3 mt-3">
+      <div class="row g-4">
+        <div class="col-md">
+          <h2 class="mb-4">Contato</h2>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <span class="fw-bold">Endereço</span><br>
+              R. Dr. Bulhões 553, São Paulo - SP
+            </li>
+            <li class="list-group-item">
+              <span class="fw-bold">Telefone</span><br>
+              (11) 9 9887-7665<br>
+              (11) 9 9112-2334
+            </li>            
+            <li class="list-group-item">
+              <span class="fw-bold">E-mail</span><br>
+              agenciade@viagens.com.br
+            </li>
+            <li class="list-group-item">
+              <span class="fw-bold">Redes sociais</span><br>
+              <a href="#" style="padding-right:2px;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+              </svg></a> <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+              </svg></a> <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">
+                <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3V0Z"/>
+              </svg></a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md">
+          <div id="map">
+            <img src="mapa.jpg" style="max-width: 500px;">
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="p-4 bg-dark text-white text-center position-relative">
+      <div class="container">
+        <p>Copyrights &copy; 2023 Agência de Viagens</p>
+        <a href="#" class="position-absolute bottom-0 end-0 p-5 text-white"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+        </svg></a>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+  </body>
+</html>
